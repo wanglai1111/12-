@@ -3,7 +3,7 @@
 .layout {
   width: 100vw;
   height: 100vh;
-  max-width: 640px;
+  // max-width: 640px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,10 +17,16 @@
 
   .left_logo {
     margin: 10px;
+    >img{
+      width: 100%;
+    }
   }
 
   .right_logo {
     margin: 5px;
+    >img {
+      width: 100%;
+    }
   }
 }
 
@@ -38,7 +44,7 @@
       width: 80%;
       background-color: #ccc;
       border-radius: 40px;
-      margin-right: 10px;
+      margin-right: 20px;
     }
 
     >input:nth-last-of-type(1) {

@@ -102,7 +102,6 @@ ul {
 .layout {
   width: 100vw;
   height: 100vh;
-  max-width: 640px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -116,8 +115,14 @@ ul {
 .mmm_logo .left_logo {
   margin: 10px;
 }
+.mmm_logo .left_logo > img {
+  width: 100%;
+}
 .mmm_logo .right_logo {
   margin: 5px;
+}
+.mmm_logo .right_logo > img {
+  width: 100%;
 }
 .mmm_content {
   flex: 1;
@@ -131,7 +136,7 @@ ul {
   width: 80%;
   background-color: #ccc;
   border-radius: 40px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .mmm_content .mmm_header > input:nth-last-of-type(1) {
   width: 15%;
