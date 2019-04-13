@@ -117,30 +117,33 @@ ul {
   margin: 10px;
 }
 .mmm_logo .left_logo img {
-  width: 100%;
+  width: 70%;
 }
 .mmm_logo .right_logo {
   margin: 5px;
 }
 .mmm_logo .right_logo img {
-  width: 100%;
+  display: block;
+  width: 70%;
 }
 .mmm_content {
   flex: 1;
 }
 .mmm_content .mmm_header {
-  margin: 10px;
+  padding: 5px;
   width: 100%;
-  height: 40px;
+  height: 45px;
+  background: #fff;
 }
 .mmm_content .mmm_header > input:nth-of-type(1) {
-  width: 80%;
+  width: 70%;
   background-color: #ccc;
   border-radius: 40px;
   margin-right: 10px;
+  padding-left: 5px;
 }
 .mmm_content .mmm_header > input:nth-last-of-type(1) {
-  width: 15%;
+  width: 20%;
   box-sizing: border-box;
   background-color: orange;
   border-radius: 20px;
@@ -153,22 +156,6 @@ ul {
   background-color: #eee;
 }
 .mmm_footer > div:nth-of-type(1) {
-  background-color: orange;
-  display: flex;
-  line-height: 20px;
-  padding: 3px;
-  margin-bottom: 20px;
-}
-.mmm_footer > div:nth-of-type(1) > span:nth-of-type(1) {
-  flex: 1;
-}
-.mmm_footer > div:nth-of-type(1) > span:nth-of-type(1) > a {
-  color: #fff;
-}
-.mmm_footer > div:nth-of-type(1) > span:nth-of-type(2) {
-  color: #fff;
-}
-.mmm_footer > div:nth-of-type(2) {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   height: 40px;
@@ -177,13 +164,13 @@ ul {
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-.mmm_footer > div:nth-of-type(2) > a {
+.mmm_footer > div:nth-of-type(1) > a {
   line-height: 40px;
   width: 33%;
   display: block;
   color: #999;
 }
-.mmm_footer > div:nth-of-type(2) > a:nth-of-type(2) {
+.mmm_footer > div:nth-of-type(1) > a:nth-of-type(2) {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
