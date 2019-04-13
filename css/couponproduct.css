@@ -1,0 +1,89 @@
+.contentTitle {
+  width: 100%;
+  color: #999;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.listCont {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.listImg {
+  margin-right: 20px;
+}
+.listTitle {
+  width: 100%;
+  flex: 1;
+}
+.title1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.title2 {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.title3 {
+  color: orange;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.showBox {
+  position: fixed;
+  top: 350px;
+  left: 290px;
+  display: flex;
+}
+.showBox > div:nth-of-type(1) {
+  position: fixed;
+  top: 100px;
+  left: -50px;
+  width: 40px;
+  height: 100px;
+}
+.showBox > div:nth-of-type(1) > button {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.showBox > div:nth-of-type(3) {
+  position: fixed;
+  top: 100px;
+  right: -350px;
+  width: 40px;
+  height: 100px;
+}
+.showBox > div:nth-of-type(3) > button {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.showBox > .showIMG {
+  position: fixed;
+  top: 38px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+}
+.showBox > .showIMG > .bannerslider {
+  width: 100%;
+  height: 100%;
+}
+.showBox > .showIMG > .bannerslider > .bannerlist {
+  width: 100%;
+  height: 100%;
+}
+.showBox > .showIMG > .bannerslider > .bannerlist > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.showBox > .showIMG > .bannerslider > .bannerlist > a > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

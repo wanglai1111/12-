@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/muie.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+  <link rel="stylesheet" href="./css/couponproduct.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="layout">
+    <!-- logo块 -->
+    <div class="mmm_logo" style="background-color:orangered">
+      <div class="left_logo">
+        <span><a href="./coupon.html">&lt;</a></span>
+        <span>优惠券</span>
+      </div>
+      <div class="right_logo">
+        <a href="javascript:;">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="showBox" style="display:none">
+      <div>
+        <button type="button" class="mui-btn mui-icon mui-icon-arrowleft mui-left" >
+        </button>
+      </div>
+      <div class="showIMG">
+        <div class="mui-slider bannerslider">
+          <div class="mui-slider-group mui-slider-loop bannerlist">
+            
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="mui-btn mui-icon mui-icon-arrowright mui-right" >
+        </button>
+      </div>
+    </div>
+    <div class="mmm_content" style="position:relative">
+      <div class="contentTitle">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+      <!-- 中间导航块 -->
+      <div class="mmm_orderlist">
+      </div>
+    </div>
+    <div class="mmm_footer">
+      <div class="footer_nav" style="background-color:#ccc">
+        <span class="pageone"><a href="./index.html" style="color:#000">首页&gt;</a></span>
+        <span class="yhq" style="color:#000">优惠券</span>
+      </div>
+      <div>
+        <a href="javascript:;"><span>登录</span></a>
+        <a href="javascript:;"><span>注册</span></a>
+        <a href="javascript:;">
+          <span class="mui-icon mui-icon-arrowthinup"></span>
+          <span class="scroTop">返回顶部</span>
+        </a>
+      </div>
+      <div>
+        <div>
+          <a href="javascript:;">手机App下载</a>
+          <a href="javascript:;">慢慢买手机版</a>
+          <a href="javascript:;">--掌上比价平台</a>
+        </div>
+        <div><a href="javascript:;">m.manmanbuy.con</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/template" id="bannerTemp">
+<!--支持循环，需要重复图片节点-->
+<div class="mui-slider-item mui-slider-item-duplicate"><a href="#">{{data[data.length-1].couponProductImg}}</a></div>
+{{each data value index}}
+<div class="mui-slider-item"><a href="#">{{@value.couponProductImg}}</a></div>
+<!--支持循环，需要重复图片节点-->
+{{/each}}
+<div class="mui-slider-item mui-slider-item-duplicate"><a href="#">{{data[0].couponProductImg}</a></div>
+
+</script>
+<script type="text/template" id="listTitleTemp">
+  {{each data value index}}
+     <div class="listCont">
+     <div class="listImg">
+       {{@value.couponProductImg}}
+     </div>
+     <div>
+       <div class="listTitle">
+         <div class=" title1 mui-ellipsis-3">{{value.couponProductName}}</div>
+         <div class="title2">{{value.couponProductPrice}}</div>
+         <div class="title3">{{value.couponProductTime}}</div>
+       </div>
+     </div>
+     </div>
+     </div>
+  {{/each}}
+  
+</script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/couponproduct.js"></script>
+</html>

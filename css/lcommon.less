@@ -1,0 +1,112 @@
+@import './reset.less';
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mmm_logo {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+
+    .left_logo {
+        margin: 10px;
+        img {
+            width: 70%;
+        }
+    }
+
+    .right_logo {
+        margin: 5px;
+
+        img {
+            display: block;
+            width: 70%;
+        }
+    }
+}
+
+.mmm_content {
+    flex: 1;
+    .mmm_header {
+        padding: 5px;
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        >input:nth-of-type(1) {   
+            width: 70%;
+            background-color: #ccc;
+            border-radius: 40px;
+            margin-right: 10px;
+            padding-left: 5px;
+        }
+        >input:nth-last-of-type(1) {
+            width: 20%;
+            box-sizing: border-box;
+            background-color: orange;
+            border-radius: 20px;
+        }
+    }
+}
+
+//底部样式
+.mmm_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #eee;
+
+    >div:nth-of-type(1) {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 40px;
+        display: flex;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        >a {
+            line-height: 40px;
+            width: 33%;
+            display: block;
+            color: #999;
+        }
+
+        >a:nth-of-type(2) {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+    }
+
+    >div:nth-last-of-type(1) {
+        text-align: center;
+
+        >div:nth-of-type(1) {
+            >a {
+                color: red;
+            }
+
+            >a:nth-of-type(2) {
+                color: #666;
+            }
+
+            >a:nth-last-of-type(1) {
+                color: #999;
+            }
+        }
+
+        >div:nth-last-of-type(1) {
+            >a {
+                color: #999;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.picker.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.poppicker.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/cdp.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 分类页功能界面 -->
+    <div class="layout">
+        <header id="header" class="mui-bar mui-bar-nav">
+            <h1 class="mui-title">凑单品</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./index.html"></a>
+            <a class="mui-pull-right"><img src="./images/header_app.png" alt=""></a>
+        </header>
+        <div class="mmm_content">
+            <div class="nav">
+                <span class="menu1">选择店铺</span>
+                <span class="menu2">选择区域</span>
+                <span class="all">全部价格</span>
+                <span class="mui-icon mui-icon-search"></span>
+            </div>
+            <div class="list">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 模版引擎 -->
+    <!-- <script type='text/template' id='shopId'>
+        {{each list value index}}
+            <span class="menu1">{{value.shopName}}</span>
+        {{/each}}
+    </script>
+    <script type='text/template' id='areaId'>
+        {{each list value index}}
+            <span class="menu2">{{value.areaName}}</span>
+        {{/each}}
+    </script> -->
+
+    <script type='text/template' id='getgsproduct'>
+        {{each list value index}}
+            <div class="list_img">
+                <img src="{{value.productImg}}" alt="">
+                <p class="mui-ellipsis-2">{{value.productName}}</p>
+                <div>
+                    <span>{{value.productPrice}}</span><button>去凑单</button>
+                </div>
+            </div>   
+        {{/each}} 
+    </script>
+
+
+
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/mui/js/mui.picker.js"></script>
+    <script src="./lib/mui/js/mui.poppicker.js"></script>
+    <script src="./lib/zepto/zepto.js"></script>
+    <script src="./lib/arttemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/cdp.js"></script>
+</body>
+
+</html>

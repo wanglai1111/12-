@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/muie.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="layout" style="background-color:#fff">
+    <!-- logo块 -->
+    <div class="mmm_logo">
+      <div class="left_logo">
+        <button type="button" class="mui-btn">&lt;</button>
+        <span>省钱控-最新优惠</span>
+      </div>
+      <div class="right_logo">
+        <a href="javascript:;">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="mmm_content">
+      <div class="discount">
+
+      </div>
+  </div>
+   <div class="mmm_footer">
+     <div style="background-color:#fff">
+       <div class="mui-content-padded footer_page">
+         <ul class="mui-pager">
+           <li class="left_arrow">
+             <a href="#">
+               上一页
+             </a>
+           </li>
+           <li class="right-arrow">
+             <a href="#">
+               下一页
+             </a>
+           </li>
+         </ul>
+         <div class="select">
+           <select name="" id="">
+             <option value="">1</option>
+             <option value="">2</option>
+             <option value="">3</option>
+             <option value="">4</option>
+             <option value="">5</option>
+             <option value="">6</option>
+             <option value="">7</option>
+             <option value="">8</option>
+             <option value="">9</option>
+             <option value="">10</option>
+             <option value="">11</option>
+             <option value="">12</option>
+             <option value="">13</option>
+             <option value="">14</option>
+           </select>
+         </div>
+       </div>
+
+     </div>
+     <div>
+       <a href="javascript:;"><span>登录</span></a>
+       <a href="javascript:;"><span>注册</span></a>
+       <a href="javascript:;">
+         <span class="mui-icon mui-icon-arrowthinup"></span>
+         <span class="scroTop">返回顶部</span>
+       </a>
+     </div>
+     <div>
+       <div>
+         <a href="javascript:;">手机App下载</a>
+         <a href="javascript:;">慢慢买手机版</a>
+         <a href="javascript:;">--掌上比价平台</a>
+       </div>
+       <div><a href="javascript:;">m.manmanbuy.con</a></div>
+     </div>
+   </div>
+   </div>
+</body>
+<script type="text/template" id="discountList">
+  {{each data value index}}
+  <div class="details_list">
+    <div><a href="javascript">{{@value.productImgSm}}</a></div>
+    <div>
+      <div class="mui-ellipsis-2">{{value.productName}}</div>
+      <div><span>{{value.productPinkage}}</span></div>
+      <div>
+        <span>{{value.productFrom}}|{{value.productTime}}</span>
+        <div>
+          <span class="mui-icon-extra mui-icon-extra-comment"></span>
+          <span>{{productComCount}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/moneyctrl.js"></script>
+</html>

@@ -1,0 +1,218 @@
+@import './reset.less';
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mmm_logo {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+
+    .left_logo {
+        margin: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .right_logo {
+        margin: 5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.mmm_content {
+    flex: 1;
+    overflow: hidden;
+
+    .mmm_header {
+        margin: 10px;
+
+        width: 100%;
+        height: 40px;
+
+
+        >input:nth-of-type(1) {
+            width: 80%;
+            background-color: #ccc;
+            border-radius: 40px;
+            margin-right: 10px;
+        }
+
+        >input:nth-last-of-type(1) {
+            width: 15%;
+            box-sizing: border-box;
+            background-color: orange;
+            border-radius: 20px;
+
+        }
+
+    }
+
+    .mmm_orderlist {
+        width: 100%;
+        height: 100%;
+
+        .mmm_top {
+            font-size: 15px;
+            color: #000;
+            background-color: #fff;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            background: linear-gradient(#fff, rgb(240, 239, 239));
+        }
+
+        .mmm_middle {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 78%;
+
+            .mm_top {
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: rgba(194, 14, 14, 0.918);
+                background-color: #fff;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 10px;
+                background: linear-gradient(#fff, rgb(240, 239, 239));
+            }
+
+            .ddd {
+                position: relative;
+                height: 100%;
+                ul {
+                    >li {
+                        padding: 10px 10px;
+                        list-style: none;
+                        &.cc {
+                            a.kk {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+
+                                .m_a {
+                                    display: flex;
+                                    width: 100%;
+                                    height: 100%;
+
+                                    .left {
+                                        width: 41px;
+                                        span {
+                                            margin: 5px auto;
+                                            width: 50%;
+                                            height: 50%;
+                                            text-align: center;
+                                            display: block;
+                                            background-color: red;
+                                            color: #fff;
+                                        }
+                                    }
+
+                                    .right {
+                                        flex: 1;
+                                        p {
+                                            font-size: 18px;
+                                            color: #000;                                            
+                                        }
+                                        .m_r {
+                                            font-size: 14px;
+                                            color: rgb(216, 215, 215);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//底部样式
+.mmm_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #eee;
+
+    >div:nth-of-type(1) {
+
+
+        >span:nth-of-type(1) {
+            flex: 1;
+
+            >a {
+                color: #fff;
+            }
+        }
+
+        >span:nth-of-type(2) {
+            color: #fff;
+        }
+    }
+
+    >div:nth-of-type(2) {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 40px;
+        display: flex;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        >a {
+            line-height: 40px;
+            width: 33%;
+            display: block;
+            color: #999;
+        }
+
+        >a:nth-of-type(2) {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+    }
+
+    >div:nth-last-of-type(1) {
+        text-align: center;
+
+        >div:nth-of-type(1) {
+            >a {
+                color: red;
+            }
+
+            >a:nth-of-type(2) {
+                color: #666;
+            }
+
+            >a:nth-last-of-type(1) {
+                color: #999;
+            }
+        }
+
+        >div:nth-last-of-type(1) {
+            >a {
+                color: #999;
+            }
+
+        }
+    }
+}

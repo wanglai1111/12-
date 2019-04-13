@@ -1,0 +1,250 @@
+@import './reset.less';
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mmm_logo {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+
+    .left_logo {
+        margin: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .right_logo {
+        margin: 5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.mmm_content {
+    flex: 1;
+    overflow: hidden;
+
+    .mmm_header {
+        margin: 10px;
+
+        width: 100%;
+        height: 40px;
+
+
+        >input:nth-of-type(1) {
+            width: 80%;
+            background-color: #ccc;
+            border-radius: 40px;
+            margin-right: 10px;
+        }
+
+        >input:nth-last-of-type(1) {
+            width: 15%;
+            box-sizing: border-box;
+            background-color: orange;
+            border-radius: 20px;
+
+        }
+
+    }
+
+    .mmm_orderlist {
+        width: 100%;
+        height: 100%;
+
+        .mmm_top {
+            font-size: 15px;
+            color: #000;
+            background-color: #fff;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            background: linear-gradient(#fff, rgb(240, 239, 239));
+        }
+
+        .mmm_middle {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 78%;
+
+            .mm_top {
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: rgba(194, 14, 14, 0.918);
+                background-color: #fff;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 10px;
+                background: linear-gradient(#fff, rgb(240, 239, 239));
+            }
+
+            .ddd {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .cvcv {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-bottom: 1px solid rgb(196, 196, 196);
+                    .left {                    
+                        width: 80px;
+                        height: 80px;
+                        background-color: pink;
+                        margin-right: 5px;
+                    }
+                    .right {
+                        flex: 1;
+                        p {
+                            font-size: 16px;
+                            color: #000;
+                        }
+                        .xxx {
+                            margin: 10px 0;
+                            > span:nth-of-type(1) {
+                                color: red;                            
+                            }
+                            > span:nth-of-type(2) {
+                                color: yellow;
+                                float: right;
+                            }
+                        }
+                        
+                        .xiao {
+                            font-size: 14px;
+                            color: rgb(170, 168, 168);
+                        }
+                    }
+                }   
+                .mmm_pinlun {
+                    position: relative;
+                    width: 90%;
+                    // height: 500px;
+                    margin: 0 auto;
+                    padding: 10px;
+                    background-color: rgb(212, 212, 212);
+                    .sanjiao {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        top: -10px;
+                        left: 70px;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid rgb(212, 212, 212);
+                        z-index: 999;
+                    }
+                    .mmm_con {
+                        margin-bottom: 5px;
+                        .m_c_t {
+                            margin-bottom: 10px;
+                            span:nth-of-type(1) {
+                                color: rgb(104, 104, 104);
+                                font-size: 12px;
+                                margin-right: 10px;
+                            }
+                            span:nth-of-type(2) {
+                                color: orangered;
+                                font-size: 18px;
+                            }
+                            span:nth-last-of-type(1) {
+                                float: right;
+                                color: rgb(177, 165, 165);
+                                font-size: 12px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }            
+            }
+        }
+
+    }
+}
+
+//底部样式
+.mmm_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #eee;
+
+    >div:nth-of-type(1) {
+
+
+        >span:nth-of-type(1) {
+            flex: 1;
+
+            >a {
+                color: #fff;
+            }
+        }
+
+        >span:nth-of-type(2) {
+            color: #fff;
+        }
+    }
+
+    >div:nth-of-type(2) {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 40px;
+        display: flex;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        >a {
+            line-height: 40px;
+            width: 33%;
+            display: block;
+            color: #999;
+        }
+
+        >a:nth-of-type(2) {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+    }
+
+    >div:nth-last-of-type(1) {
+        text-align: center;
+
+        >div:nth-of-type(1) {
+            >a {
+                color: red;
+            }
+
+            >a:nth-of-type(2) {
+                color: #666;
+            }
+
+            >a:nth-last-of-type(1) {
+                color: #999;
+            }
+        }
+
+        >div:nth-last-of-type(1) {
+            >a {
+                color: #999;
+            }
+
+        }
+    }
+}

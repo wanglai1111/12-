@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="./lib/mui/css/muie.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/ppdq_2.css">
+  <title>慢慢买-品牌大全</title>
 </head>
 
 <body>
@@ -33,14 +33,35 @@
       </div>
       <!-- 中间导航块 -->
       <div class="mmm_orderlist">
-        
+            <div class="mmm_top">
+                <div class="index">
+                  首页>
+                  <span>全部分类></span>
+                  <span>三星平板电视></span>
+                </div>
+            </div>
+            <div class="mmm_middle">
+              <div class="mm_top">
+                平板电视哪个牌子好
+              </div>
+              <div class="ddd">
+                  <div class="mui-scroll-wrapper">
+                      <div class="mui-scroll">
+                        <ul class="mui-table-view">  
+                            
+                        </ul>
+                      </div>
+                    </div>
+              </div>
+                                 
+            </div>            
       </div>
       <div class="mmm_details"></div>
     </div>
     <div class="mmm_footer">
       <div>
-        <span><a href="javascript:;">品牌排行</a></span>
-        <span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span>
+        <!-- <span><a href="javascript:;">品牌排行</a></span> -->
+        <!-- <span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span> -->
       </div>
       <div>
         <a href="javascript:;"><span>登录</span></a>
@@ -61,8 +82,27 @@
     </div>
   </div>
 </body>
+<script type="text/template" id="bbbTemp">
+    {{each list value index}}
+        <li class="cc mui-table-view-cell">
+            <a href="./ppdp_3.html?bbid={{value.brandTitleId}}" class="kk mui-navigate-right">
+                <div class="m_a">
+                    <div class="left">
+                        <span>1</span>
+                    </div>
+                    <div class="right">
+                        <p>{{value.brandName}}</p>
+                        <div class="m_r">{{value.brandInfo}}</div>
+                    </div>
+                </div>                                    
+            </a>
+        </li>
+    {{/each}}    
+</script>
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/ppdq.js"></script>
 
 </html>
