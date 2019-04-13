@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="./lib/mui/css/muie.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/common.css">
   <title>Document</title>
 </head>
 
@@ -32,21 +32,10 @@
         <input type="search" name="" id="" value="搜索">
       </div>
       <!-- 中间导航块 -->
-      <div class="mmm_orderlist clearfix">
+      <div class="mmm_orderlist">
         
       </div>
-      <div class="mmm_details">
-        <div class="detatext">
-          <h5>超值折扣推荐</h5>
-          <span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span>
-        </div>
-        <div class="discount">
-
-        </div>
-      </div>
-      <div class="mmm_more">
-        <button type="button" class="mui-btn mui-btn-block mui-btn-outlined">更多优惠信息&gt;&gt;</button>
-      </div>
+      <div class="mmm_details"></div>
     </div>
     <div class="mmm_footer">
       <div>
@@ -72,35 +61,8 @@
     </div>
   </div>
 </body>
-<script type="text/template" id="menuslist">
-  {{each data value index}}
- <a href="javascript:;">
-   {{@value.img}}
-   <div>{{value.name}}</div>
- </a>
- {{/each}}
-</script>
-<script type="text/template" id="discountList">
-{{each data value index}}
-<div class="details_list">
-  <div><a href="javascript">{{@value.productImgSm}}</a></div>
-  <div>
-    <div class="mui-ellipsis-2">{{value.productName}}</div>
-    <div><span>{{value.productPinkage}}</span></div>
-    <div>
-      <span>{{value.productFrom}}|{{value.productTime}}</span>
-      <div>
-        <span class="mui-icon-extra mui-icon-extra-comment"></span>
-        <span>{{productComCount}}</span>
-      </div>
-    </div>
-  </div>
-</div>
-{{/each}}
-</script>
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>
-<script src="./js/common.js"></script>
-<script src="./js/index.js"></script>
+
 </html>

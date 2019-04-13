@@ -1,136 +1,112 @@
-@import './reset.less';
+@import './common.less';
 
-.layout {
-  width: 100vw;
-  height: 100vh;
-  max-width: 640px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.mmm_logo {
+.mmm_orderlist{
   width: 100%;
-  background-color: orange;
-  display: flex;
-  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
 
-  .left_logo {
-    margin: 10px;
-    img {
-      width: 100%;
-    }
-  }
+  >a {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    float: left;
+    padding-bottom: 5px;
 
-  .right_logo {
-    margin: 5px;
-    img {
-      width: 100%;
+    >img {
+      width: 50%;
+      display: inline-block;
     }
   }
 }
-
-.mmm_content {
-  flex: 1;
-
-  .mmm_header {
-    margin: 10px;
-
-    width: 100%;
-    height: 40px;
-    
-
-    >input:nth-of-type(1) {
-      width: 80%;
-      background-color: #ccc;
-      border-radius: 40px;
-      margin-right: 10px;
-    }
-
-    >input:nth-last-of-type(1) {
-      width: 15%;
-      box-sizing: border-box;
+//首页商品折扣列表
+  .mmm_details {
+    margin-top: 20px;
+    position: relative;
+    //导航栏
+    .detatext {
+      width: 100%;
+      height: 40px;
       background-color: orange;
-       border-radius: 20px;
+      line-height: 40px;
 
-    }
+      >h5 {
+        font-size: 16px;
+        color: #fff;
+        margin-left: 10px;
+      }
 
-  }
-
-}
-
-//底部样式
-.mmm_footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  background-color: #eee;
-
-  >div:nth-of-type(1) {
-    background-color: orange;
-    display: flex;
-    line-height: 20px;
-    padding: 3px;
-    margin-bottom: 20px;
-
-    >span:nth-of-type(1) {
-      flex: 1;
-
-      >a {
+      >span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
         color: #fff;
       }
     }
 
-    >span:nth-of-type(2) {
-      color: #fff;
-    }
-  }
+    .details_list {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      border-bottom: 1px solid #666;
 
-  >div:nth-of-type(2) {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    height: 40px;
-    display: flex;
-    text-align: center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+      >div:nth-of-type(1) {
 
-    >a {
-      line-height: 40px;
-      width: 33%;
-      display: block;
-      color: #999;
-    }
+        >a {
+          width: 100%;
 
-    >a:nth-of-type(2) {
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-    }
-  }
-
-  >div:nth-last-of-type(1) {
-    text-align: center;
-
-    >div:nth-of-type(1) {
-      >a {
-        color: red;
+          >img {
+            width: 70%;
+            display: block;
+          }
+        }
       }
 
-      >a:nth-of-type(2) {
-        color: #666;
-      }
+      >div:nth-of-type(2) {
+        flex: 1;
 
-      >a:nth-last-of-type(1) {
-        color: #999;
+        >div:nth-of-type(1) {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        >div:nth-of-type(2) {
+          margin-bottom: 20px;
+
+          >span:nth-of-type(2) {
+            color: red;
+          }
+        }
+
+        >div:nth-of-type(3) {
+          display: flex;
+
+          >span {
+            flex: 1;
+          }
+
+          >div {
+            position: relative;
+            color: #666;
+
+            >span:nth-of-type(1) {
+              position: absolute;
+              top: 5px;
+              right: 30px;
+              font-size: 16px;
+            }
+
+            >span:nth-of-type(2) {
+              color: #888;
+              font-size: 16px;
+              margin: 0 10px;
+            }
+          }
+        }
       }
     }
-
-    >div:nth-last-of-type(1) {
-      >a {
-        color: #999;
-      }
-
-    }
-  }
+  
 }
+
